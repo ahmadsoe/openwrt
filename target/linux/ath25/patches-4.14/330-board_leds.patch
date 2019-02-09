@@ -37,10 +37,10 @@
 +		    (i == ath25_board.config->reset_config_gpio))
 +			continue;
 +
-+		if (i == ath25_board.config->sys_led_gpio)
++		if (i == 2)
 +			strcpy(led_names[led], "wlan");
 +		else
-+			sprintf(led_names[led], "gpio%d", i);
++			continue;
 +
 +		ar2315_leds[led].name = led_names[led];
 +		ar2315_leds[led].gpio = i;
